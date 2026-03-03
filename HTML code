@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Registration Page</title>
+</head>
+<body>
+
+    <h1>SKP ARTS & SCIENCE COLLEGE</h1>
+    <h2>WEB DEVELOPMENT AND AIML</h2>
+    <h3>4 Days Event 2026</h3>
+
+    <p>Intha Program moolama AI and WEB DEVELOPMENT thozhilnutpattin ethirkalam patri therinthu kollalam</p>
+
+    <h3>Event Details</h3>
+    <ul>
+        <li><strong>Date:</strong> 16th March 2026</li>
+        <li><strong>Time:</strong> 10:00 AM to 4.00 PM</li>
+        <li><strong>Venue:</strong> SKP Engineering Anna Auditorium</li>
+        <li><strong>Organizer:</strong> HTGE, GUVI Technologies</li>
+    </ul>
+
+    <hr>
+
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+            Name: <input type="text" name="name"><br><br>
+            Email: <input type="email" name="email"><br><br>
+            Phone Number: <input type="tel" name="phone"><br><br>
+            Date of Birth: <input type="date" name="dob"><br><br>
+            Gender:
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Event Selection</legend>
+            Event Selection:
+            <select name="event">
+                <option value="Workshop">Workshop</option>
+                <option value="Seminar">Seminar</option>
+                <option value="Presentation">Presentation</option>
+                <option value="Hackathon">Hackathon</option>
+                <option value="Training">Training</option>
+                <option value="Problem Solving">Problem Solving</option>
+            </select><br><br>
+            Mode of Participation:
+            <input type="radio" name="mode" value="online"> Online
+            <input type="radio" name="mode" value="offline"> Offline
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Additional Details</legend>
+            College / Company Name: <input type="text" name="org"><br><br>
+            Upload ID Proof: <input type="file" name="idproof"><br><br>
+            Comments / Expectations:<br>
+            <textarea name="comments" rows="4" cols="30"></textarea>
+            <br>
+        </fieldset>
+
+        <input type="checkbox" name="confirm"> I confirm that the above details are correct.<br><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+
+    <hr>
+
+    <h3>Registered Participants</h3>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Event</th>
+                <th>Mode</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Tharun</td>
+                <td>Tharun143@mail.com</td>
+                <td>9976542095</td>
+                <td>Workshop</td>
+                <td>Offline</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+
+    <footer>
+        <p>Contact Email: info@adroit.com | Help Desk: 1800-123-456</p>
+        <p>&copy; 2026 HTGE, GUVI Technologies Innovative Solutions Pvt LTD. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
