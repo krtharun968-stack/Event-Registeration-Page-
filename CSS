@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #eef2f3, #d9e4ec);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.event-header {
+    text-align: center;
+    padding: 20px;
+}
+
+.event-header h1 {
+    color: #2c3e50;
+}
+
+.event-header h2 {
+    color: #34495e;
+}
+
+.event-header h3 {
+    color: #555;
+}
+
+.description {
+    line-height: 1.6;
+    color: #555;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.event-details {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.event-details ul {
+    padding-left: 20px;
+}
+
+.registration-form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+legend {
+    background: #3498db;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+.radio-group {
+    margin-top: 5px;
+}
+
+.declaration {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin: 5px;
+}
+
+input[type="submit"] {
+    background: #3498db;
+}
+
+input[type="reset"] {
+    background: #e74c3c;
+}
+
+input[type="submit"]:hover {
+    background: #2980b9;
+}
+
+input[type="reset"]:hover {
+    background: #c0392b;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th {
+    background: #3498db;
+    color: white;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+tr:hover {
+    background: #dfe6e9;
+}
+
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 14px;
+}
+                                
