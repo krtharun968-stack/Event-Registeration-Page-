@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Registration Page</title>
+    <style>
+        /* Global Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #eef2f3, #d9e4ec);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+
+        /* Event Title and Description Styling */
+        .event-header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .event-header h1 {
+            color: #2c3e50;
+        }
+
+        .event-header h2 {
+            color: #34495e;
+        }
+
+        .event-header h3 {
+            color: #555;
+        }
+
+        .description {
+            line-height: 1.6;
+            color: #555;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 10px;
+        }
+
+        /* Event Information Section */
+        .event-details {
+            background: #ffffff;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .event-details ul {
+            padding-left: 20px;
+        }
+
+        /* Registration Form Card Layout */
+        .registration-form {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        /* Fieldsets and Legends */
+        fieldset {
+            border: 1px solid #ccc;
+            margin-bottom: 15px;
+            padding: 15px;
+        }
+
+        legend {
+            background: #3498db;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        /* Input Elements styling */
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box; /* Proper alignment for 100% width */
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            border-color: #3498db;
+            outline: none;
+        }
+
+        .radio-group {
+            margin-top: 5px;
+        }
+
+        /* Declaration Section */
+        .declaration {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        /* Button Styling */
+        .buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px 20px;
+            border-radius: 20px;
+            border: none;
+            color: white;
+            cursor: pointer;
+            margin: 5px;
+            transition: background 0.3s; /* Smooth visual feedback */
+        }
+
+        input[type="submit"] {
+            background: #3498db;
+        }
+
+        input[type="reset"] {
+            background: #e74c3c;
+        }
+
+        input[type="submit"]:hover {
+            background: #2980b9;
+        }
+
+        input[type="reset"]:hover {
+            background: #c0392b;
+        }
+
+        /* Participants Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th {
+            background: #3498db;
+            color: white;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+
+        tr:nth-child(even) {
+            background: #f2f2f2;
+        }
+
+        tr:hover {
+            background: #dfe6e9;
+        }
+
+        /* Footer Design */
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header class="event-header">
+        <h1>SKP ARTS & SCIENCE COLLEGE</h1>
+        <h2>WEB DEVELOPMENT AND AIML</h2>
+        <h3>4 Days Event 2026</h3>
+        <p class="description">
+            [span_2](start_span)Intha Program moolama AI and WEB DEVELOPMENT thozhilnutpattin ethirkalam patri therinthu kollalam.[span_2](end_span)
+        </p>
+    </header>
+
+    <section class="event-details">
+        <h3>Event Details</h3>
+        <ul>
+            <li><strong>Date:</strong> 15th March 2026</li>
+            <li><strong>Time:</strong> 10:00 AM to 4:00 PM</li>
+            <li><strong>Venue:</strong> SKP Engineering Anna Auditorium</li>
+            <li><strong>Organizer:</strong> HTGE, GUVI Technologies</li>
+        </ul>
+    </section>
+
+    <form class="registration-form">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label>Name</label>
+            <input type="text">
+            
+            <label>Email</label>
+            <input type="email">
+            
+            <label>Phone Number</label>
+            <input type="tel">
+            
+            <label>Date of Birth</label>
+            <input type="date">
+            
+            <label>Gender</label>
+            <div class="radio-group">
+                <input type="radio" name="gender" value="Male"> Male
+                <input type="radio" name="gender" value="Female"> Female
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Event Selection</legend>
+            <label>Event</label>
+            <select>
+                <option>Workshop</option>
+                <option>Seminar</option>
+                <option>Presentation</option>
+                <option>Hackathon</option>
+                <option>Training</option>
+                <option>Problem Solving</option>
+            </select>
+            
+            <label>Mode of Participation</label>
+            <div class="radio-group">
+                <input type="radio" name="mode" value="Online"> Online
+                <input type="radio" name="mode" value="Offline"> Offline
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Additional Details</legend>
+            <label>College / Company Name</label>
+            <input type="text">
+            
+            <label>Upload ID Proof</label>
+            <input type="file">
+            
+            <label>Comments / Expectations</label>
+            <textarea rows="4"></textarea>
+        </fieldset>
+
+        <div class="declaration">
+            <input type="checkbox"> I confirm that the above details are correct.
+        </div>
+
+        <div class="buttons">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+
+    <section>
+        <h3>Registered Participants</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Event</th>
+                    <th>Mode</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Tharun</td>
+                    <td>Tharun143@mail.com</td>
+                    <td>9976542095</td>
+                    <td>Workshop</td>
+                    <td>Offline</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</div>
+
+<footer>
+    <p>Contact Email: guvitech248@gmail.com | Help Desk: 1800-123-456</p>
+    <p>&copy; 2026 HTGE, GUVI Technologies Innovative Solutions Pvt LTD. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
+                                        
